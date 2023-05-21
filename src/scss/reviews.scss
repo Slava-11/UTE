@@ -82,9 +82,11 @@
       bottom: 46px;
     }
     transition: 0.4s;
+    background-color: var(--white);
     &:hover {
       transition: 0.4s;
       box-shadow: 0px 4px 49px 0px #003DF033;
+      scale: 1.1;
     }
     @include for-desktop {
       padding: {

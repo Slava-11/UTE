@@ -57,6 +57,11 @@
         right: 0px;
       }
     }
+    &-img{
+      min-width: 47px;
+      object-fit: contain;
+       object-position: cover;
+    }
     &-text {
       @include for-tablet {
         font-size: 14px;
