@@ -1,0 +1,62 @@
+.investment {
+  &-container {
+    margin-top: 100px;
+    padding: {
+      left: 11px;
+      right: 11px;
+    }
+    @include for-desktop {
+      margin-top: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @include for-desktop-HD {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &__content {
+    max-width: 500px;
+  }
+  &__title {
+    margin-bottom: 48px;
+    &-words {
+      color: var(--blue);
+    }
+  }
+  &__text-container {
+    display: flex;
+    align-items: center;
+    max-width: 282px;
+    width: 100%;
+    column-gap: 21px;
+    margin-bottom: 32px;
+    &-text {
+      @include for-tablet {
+        font-size: 14px;
+      }
+    }
+  }
+  &__button {
+    margin-top: 51px;
+  }
+  &__photo {
+    max-width: 674px;
+    &-img {
+      display: block;
+      margin-top: 18px;
+      width: 100%;
+    }
+  }
+  &__img {
+    display: none;
+    @include for-desktop-HD {
+      display: block;
+      position: absolute;
+      top: 2040.75px;
+      left: 0px;
+    }
+  }
+}
+@import "./base.scss";

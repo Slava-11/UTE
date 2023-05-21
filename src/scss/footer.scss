@@ -1,0 +1,133 @@
+.footer {
+  background-color: var(-secondBgColor);
+  &-container {
+    margin-top: 20px;
+    padding: {
+      top: 42px;
+      left: 11px;
+      right: 11px;
+      bottom: 70px;
+    }
+    @include for-desktop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 30px;
+      margin-top: 50px;
+    }
+    @include for-desktop-HD {
+      flex-direction: row;
+      justify-content: space-between;
+      row-gap: none;
+    }
+  }
+  &__logo {
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 11px;
+      @include for-tablet {
+        column-gap: 14px;
+      }
+      @include for-desktop {
+        justify-content: start;
+      }
+    }
+    &-img {
+      width: 74px;
+      height: 74px;
+      @include for-tablet {
+        width: 95px;
+        height: 95px;
+      }
+    }
+    &-title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 121%;
+      color: var(--blue);
+      @include for-tablet {
+        font-size: 32px;
+      }
+    }
+    &-text {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 161%;
+      color: var(--blue);
+      width: 287px;
+      margin: {
+        top: 12px;
+        left: auto;
+        right: auto;
+      }
+      @include for-desktop {
+        margin: {
+          left: 0px;
+          right: 0px;
+        }
+      }
+    }
+  }
+  &__information {
+    width: 175px;
+    margin: {
+      top: 37px;
+      left: auto;
+      right: auto;
+    }
+    @include for-tablet {
+      margin-top: 47px;
+    }
+    @include for-desktop {
+      margin: 0px;
+    }
+    &-paragraph {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 234%;
+      color: var(--textColor);
+      @include for-tablet {
+        font-size: 18px;
+      }
+    }
+  }
+  &__safe {
+    &-title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      text-align: center;
+      line-height: 327%;
+      color: var(--textColor);
+      margin-top: 20px;
+      @include for-tablet {
+        font-size: 18px;
+        margin-top: 30px;
+      }
+      @include for-desktop {
+        margin: 0px;
+      }
+    }
+    &-img {
+      display: block;
+      max-width: 287px;
+      width: 100%;
+      margin: {
+        left: auto;
+        right: auto;
+      }
+      @include for-mobile {
+        max-width: 387px;
+      }
+      @include for-desktop {
+        margin: 0px;
+      }
+    }
+  }
+}
+@import "./base.scss";

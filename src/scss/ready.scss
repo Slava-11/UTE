@@ -1,0 +1,104 @@
+.ready {
+  &-container {
+    margin-top: 76px;
+    padding: {
+      left: 11px;
+      right: 11px;
+    }
+    @include for-tablet {
+      margin-top: 100px;
+    }
+    @include for-desktop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__content {
+    max-width: 458px;
+    @include for-tablet {
+      width: 100%;
+      margin: {
+        left: auto;
+        right: auto;
+      }
+    }
+    @include for-desktop {
+      margin: 0px;
+    }
+    &-title {
+      font-size: 23px;
+      @include for-desktop {
+        text-align: left;
+        font-size: 36px;
+      }
+      &-words {
+        color: var(--blue);
+      }
+    }
+    &-text {
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      width: 265px;
+      margin: {
+        top: 37px;
+        left: auto;
+        right: auto;
+      }
+      color: var(--textColor);
+      @include for-mobile {
+        max-width: 458px;
+        width: 100%;
+      }
+      @include for-desktop {
+        margin: {
+          top: 40px;
+          left: 0px;
+          right: 0px;
+        }
+        text-align: left;
+        font-size: 24px;
+      }
+    }
+    &-button {
+      max-width: 311px;
+      margin: {
+        top: 33px;
+        left: auto;
+        right: auto;
+      }
+      @include for-desktop {
+        margin-top: 100px;
+      }
+      @include for-desktop-HD {
+        margin-top: 131px;
+      }
+    }
+  }
+  &__photo {
+    max-width: 600px;
+    margin: {
+      top: 42px;
+      left: auto;
+      right: auto;
+    }
+    @include for-desktop {
+      margin: 0px;
+    }
+    &-img {
+      width: 100%;
+    }
+  }
+  &__img {
+    display: none;
+    @include for-desktop-HD {
+      display: block;
+      position: absolute;
+      top: 4144px;
+      left: -30px;
+    }
+  }
+}
+
+@import "./base.scss";
