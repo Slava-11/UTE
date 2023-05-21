@@ -35,7 +35,7 @@
       padding-right: 15px;
     }
     &-text {
-      font-weight: 400;
+      font-weight: 600;
       color: var(--textColor);
       @include for-tablet {
         font-size: 14px;
@@ -48,6 +48,7 @@
       overflow: hidden;
       width: 185px;
       margin: 0px auto;
+      position: relative;
       @include for-mobile {
         width: 100%;
         margin: none;
@@ -58,6 +59,10 @@
       @include for-desktop-HD {
         width: 740px;
       }
+    }
+    &__slider-pagination {
+      position: absolute;
+      bottom: 0px;
     }
     &-slide {
       width: 740px;

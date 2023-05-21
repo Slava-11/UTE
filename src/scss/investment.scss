@@ -18,6 +18,19 @@
   }
   &__content {
     max-width: 500px;
+    width: 100%;
+    @include for-tablet {
+      margin: {
+        left: auto;
+        right: auto;
+      }
+    }
+    @include for-desktop {
+      margin: {
+        left: 0px;
+        right: 0px;
+      }
+    }
   }
   &__title {
     margin-bottom: 48px;
@@ -32,6 +45,18 @@
     width: 100%;
     column-gap: 21px;
     margin-bottom: 32px;
+    @include for-tablet {
+      margin: {
+        left: auto;
+        right: auto;
+      }
+    }
+    @include for-desktop {
+      margin: {
+        left: 0px;
+        right: 0px;
+      }
+    }
     &-text {
       @include for-tablet {
         font-size: 14px;
@@ -40,13 +65,35 @@
   }
   &__button {
     margin-top: 51px;
+    @include for-tablet {
+      margin: {
+        left: auto;
+        right: auto;
+      }
+    }
+    @include for-desktop {
+      margin: {
+        left: 0px;
+        right: 0px;
+      }
+    }
   }
   &__photo {
     max-width: 674px;
     &-img {
       display: block;
-      margin-top: 18px;
       width: 100%;
+      margin: {
+        top: 18px;
+        left: auto;
+        right: auto;
+      }
+      @include for-desktop {
+        margin: {
+          left: 0px;
+          right: 0px;
+        }
+      }
     }
   }
   &__img {

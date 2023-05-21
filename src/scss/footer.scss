@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(-secondBgColor);
+  background-color: #eef2f9;
   &-container {
     margin-top: 20px;
     padding: {
@@ -8,28 +8,28 @@
       right: 11px;
       bottom: 70px;
     }
-    @include for-desktop {
+    @include for-tablet {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      row-gap: 30px;
+      gap: 40px;
       margin-top: 50px;
     }
-    @include for-desktop-HD {
-      flex-direction: row;
+    @include for-desktop{
       justify-content: space-between;
-      row-gap: none;
     }
   }
   &__logo {
     &-container {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: start;
       column-gap: 11px;
+      margin-left: 17.7%;
       @include for-tablet {
         column-gap: 14px;
+        margin-left: 0px;
       }
       @include for-desktop {
         justify-content: start;
@@ -59,12 +59,14 @@
       line-height: 161%;
       color: var(--blue);
       width: 287px;
+      text-align: center;
       margin: {
         top: 12px;
         left: auto;
         right: auto;
       }
-      @include for-desktop {
+      @include for-tablet {
+        text-align: left;
         margin: {
           left: 0px;
           right: 0px;
@@ -76,11 +78,16 @@
     width: 175px;
     margin: {
       top: 37px;
-      left: auto;
+      left: 17.7%;
       right: auto;
     }
     @include for-tablet {
-      margin-top: 47px;
+      width: 197px;
+      margin: {
+        top: 47px;
+        left: 0px;
+        right: 0px;
+      }
     }
     @include for-desktop {
       margin: 0px;
@@ -94,6 +101,9 @@
       @include for-tablet {
         font-size: 18px;
       }
+      &-link {
+        color: var(--textColor);
+      }
     }
   }
   &__safe {
@@ -101,13 +111,19 @@
       font-family: "Montserrat", sans-serif;
       font-weight: 500;
       font-size: 18px;
-      text-align: center;
       line-height: 327%;
       color: var(--textColor);
-      margin-top: 20px;
+      margin: {
+        top: 20px;
+        left: 17.7%;
+      }
       @include for-tablet {
         font-size: 18px;
-        margin-top: 30px;
+        margin: {
+          top: 0px;
+          left: 0px;
+        }
+        text-align: center;
       }
       @include for-desktop {
         margin: 0px;
@@ -125,7 +141,11 @@
         max-width: 387px;
       }
       @include for-desktop {
+        max-width: 287px;
         margin: 0px;
+      }
+      @include for-desktop-HD {
+        max-width: 387px;
       }
     }
   }

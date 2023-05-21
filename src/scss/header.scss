@@ -84,7 +84,7 @@
     width: 100%;
     height: 100%;
     padding: 15px;
-    background-color: rgba(0, 61, 240, 0.8);
+    background-color: var(--blue);
     transform: translateX(-100%);
     transition: transform 0.5s;
     padding: {

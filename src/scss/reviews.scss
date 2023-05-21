@@ -5,6 +5,10 @@
       left: 11px;
       right: 11px;
     }
+    @include for-desktop-HD{
+      position: relative;
+      z-index: 5;
+    }
   }
   &__content {
     &-title {
@@ -64,10 +68,10 @@
     }
     @include for-desktop-HD {
       column-gap: 31px;
+      flex-wrap: nowrap;
     }
   }
   &__card {
-    box-shadow: 0px 4px 49px 0px #003df0;
     border-radius: 21px;
     max-width: 376px;
     width: 100%;
@@ -76,6 +80,11 @@
       left: 36px;
       right: 36px;
       bottom: 46px;
+    }
+    transition: 0.4s;
+    &:hover {
+      transition: 0.4s;
+      box-shadow: 0px 4px 49px 0px #003DF033;
     }
     @include for-desktop {
       padding: {
